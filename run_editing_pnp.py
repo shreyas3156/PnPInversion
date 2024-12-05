@@ -400,7 +400,7 @@ class PNP(nn.Module):
         return decoded_latent
 
 
-model_key = "runwayml/stable-diffusion-v1-5"
+model_key = "sd-legacy/stable-diffusion-v1-5"
 toy_scheduler = DDIMScheduler.from_pretrained(model_key, subfolder="scheduler")
 toy_scheduler.set_timesteps(NUM_DDIM_STEPS)
 
